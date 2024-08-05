@@ -1,6 +1,8 @@
 # ANSI-UTF8 Subtitle Converter
 
-A lot of subtitles are available in the ANSI encoding, which can cause issues with displaying diacritics correctly. This tool converts ANSI-encoded subtitles to UTF-8, ensuring that characters like `ț` are displayed correctly instead of incorrect representations like `þ`.
+A lot of subtitles are available in the ANSI encoding, which can cause issues with displaying diacritics correctly.
+
+This tool converts ANSI-encoded subtitles to UTF-8, ensuring that characters like `ț` are displayed correctly instead of something like `þ`.
 
 ## Features
 
@@ -31,6 +33,9 @@ This tool comes with a pre-configured character map for Romanian. If you need to
 1. Examine around 50 lines of any subtitle file in your language, noting any incorrect characters.
 
 2. Map each incorrect character to its correct UTF-8 equivalent.
+
+3. Change the `character_map_file` variable in `main.py` to point to the correct file.
+
 
 Note: You don't need to worry about uppercase characters. The code automatically handles capitalization.
 
