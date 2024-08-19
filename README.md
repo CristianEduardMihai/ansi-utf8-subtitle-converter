@@ -50,3 +50,6 @@ To convert your subtitle files:
 ### Example
 
 If you have a subtitle file named `example.srt` in the `input` directory, run the conversion script. You will find the converted file named `example_converted.srt` in the `output` directory.
+
+### Useful tools
+- https://translatesubtitles.co/
