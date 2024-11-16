@@ -56,7 +56,7 @@ def convert_srt_to_utf8(srt_file, character_map_file):
     os.makedirs(output_dir, exist_ok=True)
 
     # Write the converted content to a new .srt file in the output directory
-    converted_file = os.path.join(output_dir, os.path.basename(srt_file).replace('.srt', '_converted.srt'))
+    converted_file = os.path.join(output_dir, os.path.basename(srt_file))
     with open(converted_file, 'w', encoding='utf-8') as file:
         file.write(utf8_content)
 
